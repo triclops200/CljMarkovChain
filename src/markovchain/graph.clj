@@ -56,7 +56,7 @@
 
 (defn replace-last-two-char
   "Pretty simple function to replace the last two characters of a string
-with a '.'"
+with another"
   [from-str to-str]
   (str (subs from-str 0 (- (count from-str) 2)) to-str))
 
