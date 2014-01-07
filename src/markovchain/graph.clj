@@ -51,7 +51,7 @@
   ([graph text]
      (let [sentences (map #(str "> " % " .")
                           (clojure.string/split (format-text text)
-                                                #"[\.\?\"]"))]
+                                                #"[\.\?\"\!]"))]
        (reduce #(add-sentence %1 %2) graph sentences))))
 
 (defn replace-last-two-char
@@ -69,5 +69,3 @@ with another"
       (subs (replace-last-two-char sentence ".") 1)
       (let [next-word (select-random (graph last-word))]
         (recur next-word (str sentence " " next-word))))))
-
-
