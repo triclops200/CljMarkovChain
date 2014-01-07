@@ -6,7 +6,7 @@ A clojure program which takes text files as arguments then creates random senten
 
 Requires [leiningen](http://leiningen.org/) in order to build
 
-lein run <textfile1> [<textfile2> ...]
+lein run &lt;textfile1&gt; [&lt;textfile2&gt; ...]
 
 ## License
 
